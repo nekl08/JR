@@ -8,9 +8,9 @@
 Собираюсь его сделать так
 
 Query q = session.createQuery("from User");
-	int usersFromPafe = 10;
-        q.setFirstResult(page * usersFromPafe);
-        q.setMaxResults(usersFromPafe);
+	int usersFromPage = 10;
+        q.setFirstResult(page * usersFromPage);
+        q.setMaxResults(usersFromPage);
         List<User> userList = q.list();
 
 выкачивать не всю базу, а диапазоны
